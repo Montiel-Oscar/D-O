@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti</title>
+
+    <link rel="icon" href="icono.jpeg" type="image/jpeg">
+
+    <meta property="og:title" content="Para ti...">
+    <meta property="og:description" content="Un pequeño universo de nuestros recuerdos. ❤️">
+    <meta property="og:type" content="website">
+    
+    <meta property="og:url" content="https://montiel-oscar.github.io/D-O/">
+    <meta property="og:image" content="https://TU_USUARIO.github.io/TU_REPOSITORIO/preview.jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="lock-screen">
+        <div class="lluvia-gatos">
+            <span>🐈</span><span>❤️</span><span>🐾</span><span>🐈</span><span>❤️</span><span>🐾</span><span>🐈</span>
+        </div>
+        <div class="lock-container">
+            <h2>Feliz Cumpleaños...</h2>
+            <input type="password" id="pwd" placeholder="Ingresa nuestra clave" autocomplete="off">
+            <button class="btn-entrar" id="btn-entrar">Desbloquear recuerdos</button>
+            <div id="error-msg">Contraseña incorrecta. Pista: Miau 🐈🐾</div>
+        </div>
+    </div>
+
+    <div id="photo-universe"></div>
+
+    <div id="ui-layer">
+        <h1>Nuestro Universo</h1>
+        <p>Cada foto es un instante eterno. Elige una opción abajo.</p>
+        <div class="botones-container">
+            <button class="btn-recuerdo" id="btn-recuerdo">Un recuerdo para hoy</button>
+            <button class="btn-secundario" onclick="enviarRecuerdoWA()">Añadir al universo</button>
+        </div>
+    </div>
+
+    <div id="audio-controls">
+        <a href="https://open.spotify.com/playlist/4JR5mETN7xHGHHn7ln8gJw?si=00d0a14a88cd47b6" target="_blank" class="btn-spotify">
+            🎵 Escuchar nuestra playlist
+        </a>
+        
+        <div class="slider-container">
+            <label>Ritmo del tiempo (Velocidad)</label>
+            <input type="range" id="speed-slider" min="0.1" max="2" step="0.1" value="0.35">
+        </div>
+    </div>
+
+    <div id="memory-modal">
+        <div class="carta">
+            <img id="modal-img" src="" alt="Recuerdo especial">
+            <p id="modal-txt"></p>
+            <button class="btn-cerrar" id="btn-cerrar">Guardar en el corazón</button>
+        </div>
+    </div>
+
+    <script src="fotos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
